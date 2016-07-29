@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // MARK: Properties
+    @IBOutlet weak var myLabel: UILabel!
+    
+    var totalTap = 0
+    
+    // MARK: Default Template
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        myLabel.text = "Image is tapped " + String(totalTap) + " times"
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,5 +30,15 @@ class ViewController: UIViewController {
     }
 
 
+    // MARK: Action
+    @IBAction func tapImage(sender: UITapGestureRecognizer) {
+        
+        totalTap += 1
+        
+        myLabel.text = "Image is tapped " + String(totalTap) + " times"
+        
+    }
+    
+    
 }
 
