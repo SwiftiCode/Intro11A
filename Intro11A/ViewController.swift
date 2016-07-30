@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         myLabel.text = "Image is tapped " + String(totalTap) + " times"
-        
+         
     }
 
     override func didReceiveMemoryWarning() {
