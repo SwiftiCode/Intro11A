@@ -31,7 +31,7 @@ class ViewController: UIViewController {
 
 
     // MARK: Action
-    @IBAction func tapImage(sender: UITapGestureRecognizer) {
+    @IBAction func tapImage(_ sender: UITapGestureRecognizer) {
         
         totalTap += 1
         
